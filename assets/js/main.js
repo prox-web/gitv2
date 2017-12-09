@@ -12,6 +12,7 @@ $(window).on('load', function(){
         } else { // code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
+        alert(xmlfile+".xml");
         xmlhttp.open("GET", xmlfile+".xml", false);
         xmlhttp.send();
         xmlDoc = xmlhttp.responseXML;
