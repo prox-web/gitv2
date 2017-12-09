@@ -1,0 +1,124 @@
+.blank-row {
+    color:grey;
+    height:auto;
+    width:100%;
+}
+.blank-row a img {
+    float:left;
+}
+.blank-row a h1 {
+    float:right;
+    font-weight: bold;
+    color:#000;
+    padding:30px;
+}
+.tabs {
+    list-style-type: none;
+    margin:0;
+}
+.tab {
+    background: darkslategrey;
+    color:#fff;
+    border:1px groove black;
+    transition: background 0.4s;
+    padding:10px 0 5px 5px;
+    border-radius: 15px 15px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab:hover{
+    background: #d00032;
+}
+.tab.active{
+    background: #d00032;
+}
+.tab-content{
+    margin:0;
+    height:500px;
+    background: lightgray;
+    border:1px groove black;
+}
+.xml-content {
+    display:none;
+}
+header,html {
+    position: relative;
+    background-color: #fff;
+    padding:0;
+    margin:0;
+}
+.TopMenu{
+    padding: 20px 0 10px 0;
+}
+.TopMenu ul {
+    list-style-type: none;
+}
+.TopMenu ul li{
+   float:right;
+}
+.TopMenu ul li:before{
+    content:"|";
+}
+.TopMenu ul li:last-child:before{
+    content:"";
+}
+.TopMenu ul li>a{
+    padding:10px;
+    text-decoration: none;
+    color:#000;
+    cursor:pointer;
+}
+.products{
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+    padding:0 auto;
+    width:100%;
+}
+.products li{
+    display:inline-block;
+    float:none;
+    margin: 10px;
+}
+.selector{
+    border: 1px groove black;
+    border-radius: 3px;
+    box-shadow: #808285 2px 2px 2px;
+}
+.e-product{
+    width:100%;
+    height:250px;
+    background: center no-repeat;
+    background-size: 100%;
+}
+.ploatie{
+    position: relative;
+    width: 100%;
+    background: url("../images/dpd-header.jpg") center no-repeat;
+    background-size: cover;
+    height:25%;
+    padding: 10%;
+    margin:2% 0 2% 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.dpdh1{
+    padding: 10px 0 30px;
+}
+.bottom {
+    background: #3c3c3c;
+    color:#d00032;
+    padding:2%;
+}
+.main-header{
+    padding-bottom: 20px;
+}

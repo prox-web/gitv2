@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<SUBJECTS>
+    <TASK>
+        <FEATURE>DPD Predict</FEATURE>
+        <DESCRIPTION>DPD Predict feature</DESCRIPTION>
+        <STATUS>Done</STATUS>
+    </TASK>
+    <TASK>
+        <FEATURE>DPD Return</FEATURE>
+        <DESCRIPTION>DPD Return label</DESCRIPTION>
+        <STATUS>Done</STATUS>
+    </TASK>
+    <TASK>
+        <FEATURE>DPD Parcelshop</FEATURE>
+        <DESCRIPTION>DPD Parcelshop feature</DESCRIPTION>
+        <STATUS>InDevelopment</STATUS>
+    </TASK>
+    <TASK>
+        <FEATURE>Table Rates</FEATURE>
+        <DESCRIPTION>Table rate feature</DESCRIPTION>
+        <STATUS>Pending</STATUS>
+    </TASK>
+    <TASK>
+        <FEATURE>Shippinglist</FEATURE>
+        <DESCRIPTION>DPD Shippinglist feature</DESCRIPTION>
+        <STATUS>Pending</STATUS>
+    </TASK>
+    <ISSUE>
+        <FEATURE>Bad logo</FEATURE>
+        <DESCRIPTION>The DPD logo is missing</DESCRIPTION>
+        <STATUS>done</STATUS>
+    </ISSUE>
+    <ISSUE>
+        <FEATURE>Magento 2.2 error</FEATURE>
+        <DESCRIPTION>There is an error in Magento 2.2 bla bla</DESCRIPTION>
+        <STATUS>Pending</STATUS>
+    </ISSUE>
+</SUBJECTS>
