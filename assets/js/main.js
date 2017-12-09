@@ -4,6 +4,7 @@
 
 $(window).on('load', function(){
         loadmyxml("progress");
+    loadmyxml("products");
     });
 
     function retrive_xml_data_status(xmlfile) {
@@ -37,14 +38,32 @@ $(window).on('load', function(){
         $("#xml_issues").append("<table>" + issue_table1 + "<tbody>"+ issue_table2 + "</tbody></table>");
 
     }
+function retrive_xml_products(xmlfile) {
+    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    } else { // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    alert(xmlfile+".xml");
+    xmlhttp.open("GET", xmlfile+".xml", false);
+    xmlhttp.send();
+    xmlDoc = xmlhttp.responseXML;
+    var products = "";
+
+    var x = xmlDoc.getElementsByTagName("PRODUCT");
+    for (i = 0; i < x.length; i++) {
+        products = products + '<li class="col-md-3 selector"><a><div class="info">' + '<h3>' +(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue) + '</h3><p class="e-product" style="background-image: url(\'assets/images/'  + x[i].getElementsByTagName("IMG")[0].childNodes[0].nodeValue + '\')">' + x[i].getElementsByTagName("INFO")[0].childNodes[0].nodeValue + '</p></a></li>';
+    }
+    $("#dpd_products").append("<div class=\"container\">\n" +"<div class=\"row\">\n" + "<ul class=\"col-md-12 products\">" +  products + "</ul></div></div>");
+
+}
 
     function loadmyxml(xmlfile){
-
-        if(xmlfile === "progess"){
-            alert(xmlfile+".xml");
+        if(xmlfile === "progress"){
             retrive_xml_data_status(xmlfile);
+        }else if(xmlfile === "products") {
+            retrive_xml_products(xmlfile);
         }
-
     }
     
     $(document).ready(function() {
