@@ -39,8 +39,9 @@ $(window).on('load', function(){
     }
 
     function loadmyxml(xmlfile){
-        alert(xmlfile+".xml");
+
         if(xmlfile === "progess"){
+            alert(xmlfile+".xml");
             retrive_xml_data_status(xmlfile);
         }
 
