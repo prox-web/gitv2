@@ -4,7 +4,7 @@
 
 $(window).on('load', function(){
         loadmyxml("progress");
-    loadmyxml("products");
+        loadmyxml("products");
     });
 
     function retrive_xml_data_status(xmlfile) {

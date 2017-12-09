@@ -6,4 +6,34 @@
         <IMG>magento1.png</IMG>
         <INFO>The DPD shipping extensions for Magento 1</INFO>
     </PRODUCT>
+    <PRODUCT>
+        <NAME>DPD Magento 2 Extension</NAME>
+        <URL>#</URL>
+        <IMG>magento2.png</IMG>
+        <INFO>The DPD shipping extensions for Magento 2</INFO>
+    </PRODUCT>
+    <PRODUCT>
+        <NAME>DPD WooCommerce Extension</NAME>
+        <URL>#</URL>
+        <IMG>woocommerce.png</IMG>
+        <INFO>The DPD shipping extensions for WooCommerce</INFO>
+    </PRODUCT>
+    <PRODUCT>
+        <NAME>DPD OpenCart Extension</NAME>
+        <URL>#</URL>
+        <IMG>opencart.png</IMG>
+        <INFO>The DPD shipping extensions for OpenCart</INFO>
+    </PRODUCT>
+    <PRODUCT>
+        <NAME>DPD PrestaShop Extension</NAME>
+        <URL>#</URL>
+        <IMG>prestashop.png</IMG>
+        <INFO>The DPD shipping extensions for PrestaShop</INFO>
+    </PRODUCT>
+    <PRODUCT>
+        <NAME>DPD Shopify shipment solution</NAME>
+        <URL>#</URL>
+        <IMG>shopify.png</IMG>
+        <INFO>All you need to know about Shopify integrations </INFO>
+    </PRODUCT>
 </PRODUCTS>
