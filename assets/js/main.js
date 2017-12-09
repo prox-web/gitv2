@@ -39,8 +39,11 @@ $(window).on('load', function(){
     }
 
     function loadmyxml(xmlfile){
-        if(xmlfile === "progess")
-        retrive_xml_data_status(xmlfile);
+        alert(xmlfile+".xml");
+        if(xmlfile === "progess"){
+            retrive_xml_data_status(xmlfile);
+        }
+
     }
     
     $(document).ready(function() {
