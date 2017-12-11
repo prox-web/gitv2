@@ -82,23 +82,32 @@ header,html {
     float:none;
     margin: 10px;
     filter: invert(0%);
+    -ms-filter: invert(0%);
     cursor:pointer;
     background: #fff;
     color:#000;
-    transition: background 0.7s, filter 0.7s;
+    transition: background 0.7s, filter 0.7s, font-weight 0.7s;
 }
 .products li:hover{
     filter: invert(100%);
+    -ms-filter: invert(100%);
     background: #fff;
+}
+.products li:hover, h3, p{
+    font-weight: bold;
+}
+.products li:hover.selector{
+    box-shadow: #808285 0px 0px 10px;
 }
 .products li a{
     text-decoration: none;
     color:#000;
 }
 .selector{
-    border: 1px groove black;
+    /*border: 1px groove #808285; */
     border-radius: 3px;
-    box-shadow: #808285 2px 2px 2px;
+    box-shadow: #808285 0px 0px 5px;
+    transition: box-shadow 0.7s;
 }
 .e-product{
     width:100%;
