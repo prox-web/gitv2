@@ -36,4 +36,10 @@
         <IMG>shopify.png</IMG>
         <INFO>All you need to know about Shopify integrations </INFO>
     </PRODUCT>
+        <PRODUCT>
+        <NAME>DPD test product shipment solution</NAME>
+        <URL>#</URL>
+        <IMG>shopify.png</IMG>
+        <INFO>All you need to know about this test product integrations </INFO>
+    </PRODUCT>
 </PRODUCTS>
