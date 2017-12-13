@@ -50,7 +50,7 @@ function retrive_xml_products(xmlfile) {
 
     var x = xmlDoc.getElementsByTagName("PRODUCT");
     for (i = 0; i < x.length; i++) {
-        products = products + '<li class="col-md-3 selector"><a><div class="info">' + '<p class="e-product" style="background-image: url(\'assets/images/'  + x[i].getElementsByTagName("IMG")[0].childNodes[0].nodeValue + '\')"></p><h3>' +(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue) + '</h3>'+ x[i].getElementsByTagName("INFO")[0].childNodes[0].nodeValue + '</p></a></li>';
+        products = products + '<li class="col-md-3 selector"><a href="' + x[i].getElementsByTagName("URL")[0].childNodes[0].nodeValue + '"><div class="info">' + '<p class="e-product" style="background-image: url(\'assets/images/'  + x[i].getElementsByTagName("IMG")[0].childNodes[0].nodeValue + '\')"></p><h3>' +(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue) + '</h3>'+ x[i].getElementsByTagName("INFO")[0].childNodes[0].nodeValue + '</p></a></li>';
     }
     $("#dpd_products").append("<div class=\"container\">\n" +"<div class=\"row\">\n" + "<ul class=\"col-md-12 products\">" +  products + "</ul></div></div>");
 
